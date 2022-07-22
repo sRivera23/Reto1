@@ -1,2 +1,2 @@
 # Técnicas de programación
-Reto 4 - Técnicas de programación - Santiago Rivera - Santiago Alexander Losada 
+Reto 5 - Técnicas de programación - Santiago Rivera - Santiago Alexander Losada 
