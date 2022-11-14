@@ -17,9 +17,9 @@ public class Archivo {
         String lineaCopia;
         String tab = "        ";
         List <String> listaDeLineas = new ArrayList<String>();
-        String archivoDestino = destino/*"C:/Users/santi/Downloads/NuevoArchivo.csv"*/;
+        String archivoDestino = destino/*cambiar por ruta personal*/;
         
-       //cambiar por ruta personal
+       
         try (BufferedReader lectorPorLineas = new BufferedReader(new FileReader(ruta))) {
             band:
             while((linea = lectorPorLineas.readLine()) != null ) {
@@ -83,7 +83,7 @@ public class Archivo {
             band:
         while((linea = lectorPorLineas.readLine()) != null ) {
             String vectorDatos[] = linea.split(",");
-            if(vectorDatos[0].equals("Date")) continue;
+            if(vectorDatos[0].equals("Date")) continue band;
             ListaVolumenes.add(Double.valueOf(vectorDatos[6]));
             fecha.add(vectorDatos[0]);
             }
