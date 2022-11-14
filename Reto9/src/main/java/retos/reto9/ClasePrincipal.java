@@ -10,53 +10,38 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-/**
- *
- * @author santi
- */
+
 public class ClasePrincipal {
 
     static Scanner entrada = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException{
-        String ruta = "C:\\Users\\usuario\\Downloads\\ETH-USD.csv" /*"C:/Users/santi/Downloads/ETH-USD.csv"*/;
+        String ruta = "C:\\Users\\usuario\\Downloads\\ETH-USD.csv" 
         String destino = "C:\\Users\\usuario\\Documents\\NetBeansProjects\\Reto9Fin\\src\\main\\java\\retos\\reto9\\ETH-USD(modificado).csv";
         //IMPORTANTE cambiar ruta y destino
         
         Archivo a = new Archivo();
        a.promedioYDesviacion(ruta);
-       //a.volumenMayorYMenor(ruta);
-       //a.punto1(ruta,destino);
+       a.volumenMayorYMenor(ruta);
+       a.punto1(ruta,destino);
         
-//        Set<String>  cadenas = new HashSet<String>();
-//        List<Double> numeros = new ArrayList<>();
-//
-//        cadenas.add("Messi");
-//        cadenas.add("Ronaldo");
-//        cadenas.add("Neymar");
-//        cadenas.add("Kaka");
-//        cadenas.add("Pepe");
-//        numeros.add(2.3);
-//        numeros.add(4.2);
-//        numeros.add(9.0);
-//        System.out.println(numeros);
-//        
-//        System.out.println(raizCuadrada(numeros));
-//        System.out.println(masDeCinco(cadenas));
-//        
+        Set<String>  cadenas = new HashSet<String>();
+        List<Double> numeros = new ArrayList<>();
+
+        cadenas.add("Messi");
+        cadenas.add("Ronaldo");
+        cadenas.add("Neymar");
+        cadenas.add("Kaka");
+        cadenas.add("Pepe");
+        numeros.add(2.3);
+        numeros.add(4.2);
+        numeros.add(9.0);
+        System.out.println(numeros);
+        
+        System.out.println(raizCuadrada(numeros));
+        System.out.println(masDeCinco(cadenas));
+        
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
 
