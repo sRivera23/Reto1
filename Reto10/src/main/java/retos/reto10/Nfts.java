@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author santi
  */
 @WebServlet("/NTFs")
-public class Nfts extends HttpServlet {
+public class NTFs extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -28,11 +28,11 @@ public class Nfts extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>NFTS</title>");            
+            out.println("<title>NTFs</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Los NFTS</h1>");
-            out.println("<p> NTFS (siglas en inglés de New Technology File System) es un sistema de Windows NT 3.1, Windows NT 3.5, Windows NT 3.51,"
+            out.println("<h1>Los NTFs</h1>");
+            out.println("<p> NTFs (siglas en inglés de New Technology File System) es un sistema de Windows NT 3.1, Windows NT 3.5, Windows NT 3.51,"
                     + " Windows NT 4.0, Windows 2000 Windows XP, Windows Server 2003, Windows Server 2008,"
                     + " Windows Vista, Windows 7, Windows 8 , Windows 10 y Windows 11. Está basado en el sistema "
                     + "e archivos HPFS de IBM/Microsoft usado en el sistema operativo OS/2, "
